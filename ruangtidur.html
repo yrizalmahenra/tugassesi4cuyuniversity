@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ruangan Tidur</title>
+    <!-- link cdn css bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" />
+    <!-- external css -->
+    <link rel="stylesheet" href="ruangtidur.css" />
+  </head>
+  <body>
+    <div>
+      <button onclick="goBack()" class="btn btn-primary" type="button">Kembali</button>
+    </div>
+    <div>
+      <div class="form-check form-switch">
+        <img src="assets/image/off.png" id="lampu1" alt="" />
+        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked1" onchange="power ()" />
+        <label class="form-check-label" for="flexSwitchCheckChecked"></label>
+      </div>
+      <div class="form-check form-switch">
+        <img src="assets/image/off.png" id="lampu2" alt="" />
+        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked2" onchange="power ()" />
+        <label class="form-check-label" for="flexSwitchCheckChecked"></label>
+      </div>
+      <div class="form-check form-switch">
+        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked1,2" onchange="doublepower ()" />
+        <label class="form-check-label" for="flexSwitchCheckChecked"></label>
+      </div>
+    </div>
+    
+
+    <!-- link cdn js bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="ruangtidur.js"></script>
+  </body>
+</html>
